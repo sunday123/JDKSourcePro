@@ -43,7 +43,6 @@ public class ReentrantReadWriteLockTest {
     public static void main(String[] args) {
     final ReentrantReadWriteLockTest test = new ReentrantReadWriteLockTest();
     Thread t1 = new Thread(new Runnable() {
-        @Override
         public void run() {
         	test.write();
             test.read();
@@ -52,19 +51,16 @@ public class ReentrantReadWriteLockTest {
         }
     }, "A");
     Thread t2 = new Thread(new Runnable() {
-        @Override
         public void run() {
             test.read();
         }
     }, "B");
     Thread t3 = new Thread(new Runnable() {
-        @Override
         public void run() {
             test.write();
         }
     }, "C");
     Thread t4 = new Thread(new Runnable() {
-        @Override
         public void run() {
             test.write();
         }

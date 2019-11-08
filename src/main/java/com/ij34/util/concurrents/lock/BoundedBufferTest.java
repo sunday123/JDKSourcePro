@@ -46,13 +46,12 @@ public class BoundedBufferTest {
    
    public static void main(String[] args) {
 	   
-	   BoundedBufferTest queue=new BoundedBufferTest();
+	   final BoundedBufferTest queue=new BoundedBufferTest();
 	   
 	   for (int i = 0; i < 10; i++) {
-		    int ii=i;
+		    final int ii=i;
 	        new Thread(new Runnable() {
 	        	
-	            @Override
 	            public void run() {
 	                try {
 	                	
@@ -69,7 +68,6 @@ public class BoundedBufferTest {
 
 	    for(int i=0;i<10;i++){
 	        new Thread(new Runnable() {
-	            @Override
 	            public void run() {
 	                try {
 	                    System.out.println("-:"+queue.take());

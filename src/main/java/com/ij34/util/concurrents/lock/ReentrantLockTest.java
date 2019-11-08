@@ -171,7 +171,6 @@ public class ReentrantLockTest {
     }
     static class SignalThread implements Runnable {
 
-        @Override
         public void run() {
             lock.lock();
             try {
