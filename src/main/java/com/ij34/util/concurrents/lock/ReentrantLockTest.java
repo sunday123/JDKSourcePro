@@ -5,6 +5,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 //参考https://www.cnblogs.com/takumicx/p/9338983.html
+//ReentrantLock:互斥锁 ,独享锁
 /*//普通ReentrantLock 锁和开锁
 public class ReentrantLockTest {
 
