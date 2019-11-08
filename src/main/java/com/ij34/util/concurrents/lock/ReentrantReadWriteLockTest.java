@@ -1,7 +1,7 @@
 package com.ij34.util.concurrents.lock;
 
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-//https://www.cnblogs.com/kaituorensheng/p/10631112.html
+//参考https://www.cnblogs.com/kaituorensheng/p/10631112.html
 //读写锁维护了一对锁：一个读锁，一个写锁。通过分离读锁和写锁，使得并发性相比一般的排他锁有了很大提升。在读多写少的情况下，读写锁能够提供比排他锁更好的并发性和吞吐量
 public class ReentrantReadWriteLockTest {
     ReentrantReadWriteLock lock;

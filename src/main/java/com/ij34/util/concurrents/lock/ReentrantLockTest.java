@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 //参考https://www.cnblogs.com/takumicx/p/9338983.html
-//ReentrantLock:互斥锁 ,独享锁
+//ReentrantLock:独享锁/共享锁中的互斥锁 ;互斥锁/读写锁中的独享锁;默认是非公平锁。非公平锁的优点在于吞吐量比公平锁大
 /*//普通ReentrantLock 锁和开锁
 public class ReentrantLockTest {
 
